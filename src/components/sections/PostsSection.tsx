@@ -86,7 +86,7 @@ const demoPosts: Post[] = [
   },
   {
     id: "6",
-    content: "🌟 Customer Spotlight: Meet Sarah, who transformed her style with our pieces! Share your transformation story in the comments. #CustomerSpotlight #Transformation #Style",
+    content: "🌟 Customer Spotlight: Meet Abeba, who transformed her style with our pieces! Share your transformation story in the comments. #CustomerSpotlight #Transformation #Style",
     platforms: ["Instagram", "Facebook"],
     scheduledAt: "2025-06-14T12:00:00Z",
     status: "draft",
@@ -99,9 +99,9 @@ export function PostsSection() {
   const [posts] = useState<Post[]>(demoPosts);
 
   // Placeholder CRUD handlers
-  const handleAdd = () => {};
-  const handleEdit = () => {};
-  const handleDelete = () => {};
+  const handleAdd = () => { };
+  const handleEdit = () => { };
+  const handleDelete = () => { };
 
   const getPlatformColor = (platform: string) => {
     const colors: Record<string, string> = {
@@ -202,15 +202,14 @@ export function PostsSection() {
                 </div>
                 <div className="flex items-center gap-2">
                   <span
-                    className={`text-xs px-3 py-1 rounded-full font-medium ${
-                      post.status === "scheduled"
+                    className={`text-xs px-3 py-1 rounded-full font-medium ${post.status === "scheduled"
                         ? "bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200"
                         : post.status === "posted"
-                        ? "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200"
-                        : post.status === "failed"
-                        ? "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200"
-                        : "bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-200"
-                    }`}
+                          ? "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200"
+                          : post.status === "failed"
+                            ? "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200"
+                            : "bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-200"
+                      }`}
                   >
                     {post.status.charAt(0).toUpperCase() + post.status.slice(1)}
                   </span>

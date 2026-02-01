@@ -14,19 +14,19 @@ type User = {
 };
 
 const demoUsers: User[] = [
-  { id: "1", name: "Alice", role: "admin", email: "alice@email.com", status: "active" },
-  { id: "2", name: "Bob", role: "editor", email: "bob@email.com", status: "active" },
-  { id: "3", name: "Charlie", role: "viewer", email: "charlie@email.com", status: "invited" },
-  { id: "4", name: "Dana", role: "editor", email: "dana@email.com", status: "suspended" },
+  { id: "1", name: "Aster", role: "admin", email: "aster@email.com", status: "active" },
+  { id: "2", name: "Bereket", role: "editor", email: "bereket@email.com", status: "active" },
+  { id: "3", name: "Chala", role: "viewer", email: "chala@email.com", status: "invited" },
+  { id: "4", name: "Danait", role: "editor", email: "danait@email.com", status: "suspended" },
 ];
 
 export function UsersSection() {
   const [users] = useState<User[]>(demoUsers);
 
   // Placeholder CRUD handlers
-  const handleAdd = () => {};
-  const handleEdit = () => {};
-  const handleDelete = () => {};
+  const handleAdd = () => { };
+  const handleEdit = () => { };
+  const handleDelete = () => { };
 
   return (
     <div>
@@ -48,8 +48,8 @@ export function UsersSection() {
                     user.status === "active"
                       ? "text-green-600"
                       : user.status === "invited"
-                      ? "text-blue-600"
-                      : "text-red-600"
+                        ? "text-blue-600"
+                        : "text-red-600"
                   }
                 >
                   {user.status.charAt(0).toUpperCase() + user.status.slice(1)}

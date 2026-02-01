@@ -127,11 +127,11 @@ export function AnalyticsSection() {
           </CardHeader>
           <CardContent className="pb-4">
             <div className="h-56">
-              <Line data={followerGrowthData} options={{ 
-                responsive: true, 
+              <Line data={followerGrowthData} options={{
+                responsive: true,
                 maintainAspectRatio: false,
-                plugins: { 
-                  legend: { 
+                plugins: {
+                  legend: {
                     position: 'bottom',
                     labels: { boxWidth: 12, padding: 8, font: { size: 11 } }
                   }
@@ -151,8 +151,8 @@ export function AnalyticsSection() {
           </CardHeader>
           <CardContent className="pb-4">
             <div className="h-56">
-              <Bar data={engagementRateData} options={{ 
-                responsive: true, 
+              <Bar data={engagementRateData} options={{
+                responsive: true,
                 maintainAspectRatio: false,
                 plugins: { legend: { display: false } },
                 scales: {
@@ -170,11 +170,11 @@ export function AnalyticsSection() {
           </CardHeader>
           <CardContent className="pb-4">
             <div className="h-56">
-              <Doughnut data={reachData} options={{ 
-                responsive: true, 
+              <Doughnut data={reachData} options={{
+                responsive: true,
                 maintainAspectRatio: false,
-                plugins: { 
-                  legend: { 
+                plugins: {
+                  legend: {
                     position: 'bottom',
                     labels: { boxWidth: 12, padding: 8, font: { size: 11 } }
                   }
@@ -190,8 +190,8 @@ export function AnalyticsSection() {
           </CardHeader>
           <CardContent className="pb-4">
             <div className="h-56">
-              <Bar data={demographicsData} options={{ 
-                responsive: true, 
+              <Bar data={demographicsData} options={{
+                responsive: true,
                 maintainAspectRatio: false,
                 plugins: { legend: { display: false } },
                 scales: {
@@ -216,18 +216,18 @@ export function AnalyticsSection() {
           <CardContent>
             <div className="space-y-3">
               {[
-                { country: "United States", percentage: 45, followers: "137.3K" },
-                { country: "United Kingdom", percentage: 18, followers: "54.9K" },
-                { country: "Canada", percentage: 12, followers: "36.6K" },
-                { country: "Australia", percentage: 8, followers: "24.4K" },
-                { country: "Germany", percentage: 6, followers: "18.3K" },
+                { country: "Ethiopia", percentage: 45, followers: "137.3K" },
+                { country: "Kenya", percentage: 18, followers: "54.9K" },
+                { country: "Djibouti", percentage: 12, followers: "36.6K" },
+                { country: "Somalia", percentage: 8, followers: "24.4K" },
+                { country: "Sudan", percentage: 6, followers: "18.3K" },
               ].map((item, index) => (
                 <div key={index} className="flex items-center justify-between">
                   <span className="text-sm font-medium">{item.country}</span>
                   <div className="flex items-center gap-3">
                     <div className="w-20 bg-secondary rounded-full h-2">
-                      <div 
-                        className="h-2 bg-primary rounded-full" 
+                      <div
+                        className="h-2 bg-primary rounded-full"
                         style={{ width: `${item.percentage}%` }}
                       />
                     </div>
@@ -261,14 +261,13 @@ export function AnalyticsSection() {
                     <p className="font-medium text-sm">{item.time}</p>
                     <p className="text-xs text-muted-foreground">{item.platform}</p>
                   </div>
-                  <span 
-                    className={`text-xs px-2 py-1 rounded-full ${
-                      item.engagement === "Very High" 
+                  <span
+                    className={`text-xs px-2 py-1 rounded-full ${item.engagement === "Very High"
                         ? "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200"
                         : item.engagement === "High"
-                        ? "bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200"
-                        : "bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200"
-                    }`}
+                          ? "bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200"
+                          : "bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200"
+                      }`}
                   >
                     {item.engagement}
                   </span>

@@ -3,10 +3,10 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const engagementDemo = [
-  { id: 1, type: "Like", user: "Alice", post: "Launching our new product next week! 🚀", time: "2025-06-11T09:00:00Z" },
-  { id: 2, type: "Comment", user: "Bob", post: "Thank you for 10k followers! 🎉", time: "2025-06-10T15:00:00Z" },
-  { id: 3, type: "Share", user: "Charlie", post: "Launching our new product next week! 🚀", time: "2025-06-10T16:00:00Z" },
-  { id: 4, type: "Like", user: "Dana", post: "Our servers will be down for maintenance tonight.", time: "2025-06-09T23:00:00Z" },
+  { id: 1, type: "Like", user: "Aster", post: "Launching our new product next week! 🚀", time: "2025-06-11T09:00:00Z" },
+  { id: 2, type: "Comment", user: "Bereket", post: "Thank you for 10k followers! 🎉", time: "2025-06-10T15:00:00Z" },
+  { id: 3, type: "Share", user: "Chala", post: "Launching our new product next week! 🚀", time: "2025-06-10T16:00:00Z" },
+  { id: 4, type: "Like", user: "Danait", post: "Our servers will be down for maintenance tonight.", time: "2025-06-09T23:00:00Z" },
 ];
 
 export function EngagementSection() {

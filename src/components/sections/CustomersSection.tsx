@@ -36,11 +36,11 @@ type Customer = {
 const demoCustomers: Customer[] = [
   {
     id: "1",
-    name: "Sarah Johnson",
-    email: "sarah.johnson@email.com",
-    phone: "+1 (555) 123-4567",
-    location: "New York, USA",
-    avatar: "SJ",
+    name: "Abeba Ayele",
+    email: "abeba.ayele@email.com",
+    phone: "+251 911 123 456",
+    location: "Addis Ababa, Ethiopia",
+    avatar: "AA",
     joinDate: "2024-03-15",
     lastActive: "2025-06-11T08:30:00Z",
     totalSpent: 2850,
@@ -54,11 +54,11 @@ const demoCustomers: Customer[] = [
   },
   {
     id: "2",
-    name: "Michael Chen",
-    email: "m.chen@techcorp.com",
-    phone: "+1 (555) 987-6543",
-    location: "San Francisco, USA",
-    avatar: "MC",
+    name: "Kebede Molla",
+    email: "k.molla@techcorp.com",
+    phone: "+251 911 987 654",
+    location: "Dire Dawa, Ethiopia",
+    avatar: "KM",
     joinDate: "2024-01-22",
     lastActive: "2025-06-10T16:45:00Z",
     totalSpent: 5200,
@@ -72,11 +72,11 @@ const demoCustomers: Customer[] = [
   },
   {
     id: "3",
-    name: "Emma Rodriguez",
-    email: "emma.r@gmail.com",
-    phone: "+1 (555) 456-7890",
-    location: "Miami, USA",
-    avatar: "ER",
+    name: "Tigist Belay",
+    email: "tigist.b@gmail.com",
+    phone: "+251 911 456 789",
+    location: "Bahir Dar, Ethiopia",
+    avatar: "TB",
     joinDate: "2025-05-01",
     lastActive: "2025-06-11T12:15:00Z",
     totalSpent: 320,
@@ -90,10 +90,10 @@ const demoCustomers: Customer[] = [
   },
   {
     id: "4",
-    name: "David Thompson",
-    email: "david.t@email.com",
-    phone: "+1 (555) 234-5678",
-    location: "Chicago, USA",
+    name: "Dawit Tesfaye",
+    email: "dawit.t@email.com",
+    phone: "+251 911 234 567",
+    location: "Gondar, Ethiopia",
     avatar: "DT",
     joinDate: "2023-11-10",
     lastActive: "2025-05-20T10:20:00Z",
@@ -108,11 +108,11 @@ const demoCustomers: Customer[] = [
   },
   {
     id: "5",
-    name: "Lisa Wang",
-    email: "lisa.wang@startup.io",
-    phone: "+1 (555) 345-6789",
-    location: "Seattle, USA",
-    avatar: "LW",
+    name: "Almaz Zerihun",
+    email: "almaz.zerihun@startup.io",
+    phone: "+251 911 345 678",
+    location: "Mekelle, Ethiopia",
+    avatar: "AZ",
     joinDate: "2024-08-03",
     lastActive: "2025-06-11T09:00:00Z",
     totalSpent: 890,
@@ -126,11 +126,11 @@ const demoCustomers: Customer[] = [
   },
   {
     id: "6",
-    name: "James Mitchell",
-    email: "james.m@email.com",
-    phone: "+1 (555) 567-8901",
-    location: "Austin, USA",
-    avatar: "JM",
+    name: "Bekele Gebre",
+    email: "bekele.g@email.com",
+    phone: "+251 911 567 890",
+    location: "Hawassa, Ethiopia",
+    avatar: "BG",
     joinDate: "2024-12-15",
     lastActive: "2025-06-11T14:30:00Z",
     totalSpent: 450,
@@ -251,7 +251,7 @@ export function CustomersSection() {
           </CardHeader>
           <CardContent>
             <div className="text-2xl font-bold">{vipCustomers}</div>
-            <p className="text-xs text-muted-foreground">{((vipCustomers/totalCustomers)*100).toFixed(1)}% of total</p>
+            <p className="text-xs text-muted-foreground">{((vipCustomers / totalCustomers) * 100).toFixed(1)}% of total</p>
           </CardContent>
         </Card>
       </div>
@@ -264,11 +264,11 @@ export function CustomersSection() {
           </CardHeader>
           <CardContent className="pb-4">
             <div className="h-52">
-              <Doughnut data={segmentData} options={{ 
-                responsive: true, 
+              <Doughnut data={segmentData} options={{
+                responsive: true,
                 maintainAspectRatio: false,
-                plugins: { 
-                  legend: { 
+                plugins: {
+                  legend: {
                     position: 'bottom',
                     labels: { boxWidth: 12, padding: 8, font: { size: 11 } }
                   }
@@ -283,8 +283,8 @@ export function CustomersSection() {
           </CardHeader>
           <CardContent className="pb-4">
             <div className="h-52">
-              <Bar data={platformData} options={{ 
-                responsive: true, 
+              <Bar data={platformData} options={{
+                responsive: true,
                 maintainAspectRatio: false,
                 plugins: { legend: { display: false } },
                 scales: {
@@ -322,15 +322,14 @@ export function CustomersSection() {
                         {customer.platform}
                       </span>
                       <span
-                        className={`text-xs px-2 py-1 rounded-full ${
-                          customer.segment === "VIP"
+                        className={`text-xs px-2 py-1 rounded-full ${customer.segment === "VIP"
                             ? "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200"
                             : customer.segment === "Regular"
-                            ? "bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200"
-                            : customer.segment === "New"
-                            ? "bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-200"
-                            : "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200"
-                        }`}
+                              ? "bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200"
+                              : customer.segment === "New"
+                                ? "bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-200"
+                                : "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200"
+                          }`}
                       >
                         {customer.segment}
                       </span>
@@ -340,7 +339,7 @@ export function CustomersSection() {
                       </div>
                     </div>
                   </div>
-                  
+
                   <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-sm text-muted-foreground">
                     <div className="flex items-center gap-1">
                       <MapPin className="h-3 w-3" />
@@ -350,54 +349,54 @@ export function CustomersSection() {
                     <div>Orders: {customer.orders}</div>
                     <div>Last Active: {new Date(customer.lastActive).toLocaleDateString()}</div>
                   </div>
-                  
+
                   <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-sm">
                     <div>❤️ {customer.interactions.likes} likes</div>
                     <div>💬 {customer.interactions.comments} comments</div>
                     <div>🔄 {customer.interactions.shares} shares</div>
                     <div>📧 {customer.interactions.messages} messages</div>
                   </div>
-                  
+
                   {customer.notes && (
                     <p className="text-sm text-muted-foreground italic">{customer.notes}</p>
                   )}
                 </div>
-                  <div className="flex flex-row lg:flex-col gap-2">
-                  <Button 
-                    variant="outline" 
-                    size="icon" 
+                <div className="flex flex-row lg:flex-col gap-2">
+                  <Button
+                    variant="outline"
+                    size="icon"
                     onClick={handleContact}
                     title="Send Email"
                   >
                     <Mail className="h-4 w-4" />
                   </Button>
-                  <Button 
-                    variant="outline" 
-                    size="icon" 
+                  <Button
+                    variant="outline"
+                    size="icon"
                     onClick={handleContact}
                     title="Call"
                   >
                     <Phone className="h-4 w-4" />
                   </Button>
-                  <Button 
-                    variant="outline" 
-                    size="icon" 
+                  <Button
+                    variant="outline"
+                    size="icon"
                     onClick={handleContact}
                     title="Send Message"
                   >
                     <MessageSquare className="h-4 w-4" />
                   </Button>
-                  <Button 
-                    variant="outline" 
-                    size="icon" 
+                  <Button
+                    variant="outline"
+                    size="icon"
                     onClick={handleEdit}
                     title="Edit"
                   >
                     <Edit className="h-4 w-4" />
                   </Button>
-                  <Button 
-                    variant="destructive" 
-                    size="icon" 
+                  <Button
+                    variant="destructive"
+                    size="icon"
                     onClick={handleDelete}
                     title="Delete"
                   >
