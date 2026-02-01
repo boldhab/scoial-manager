@@ -1,62 +1,77 @@
-# 🚀 SocialDash - Premium Social Media Manager
 
-SocialDash is a state-of-the-art social media management dashboard built with **Next.js 15**, **Tailwind CSS v4**, and **Radix UI**. It provides a comprehensive suite of tools for tracking analytics, managing customers, scheduling posts, and monitoring engagement—all wrapped in a stunning, premium user interface.
+# Social Media Dashboard
 
-## ✨ Key Features
+A modern, responsive social media analytics dashboard built with Next.js and Tailwind CSS. It includes overview cards, charts, audience insights, and configurable sections for posts, campaigns, customers, and settings.
 
-### 🇪🇹 Ethiopian Localization
-The dashboard is meticulously localized for the Ethiopian market:
-- **Names & Personas**: All demo data uses authentic Ethiopian names (e.g., Abeba Ayele, Kebede Molla).
-- **Locations**: Strategic locations focused on major Ethiopian cities like Addis Ababa, Bahir Dar, and Dire Dawa.
-- **Regions**: Analytics focused on East Africa (Ethiopia, Kenya, Djibouti, Somalia, Sudan).
+## Highlights
 
-### 🎨 Premium UI & Design
-Experience a high-end, modern aesthetic:
-- **Glassmorphism**: Translucent, backdrop-blurred cards and sidebar for a sophisticated feel.
-- **Vibrant OKLCH Colors**: A cutting-edge color system for maximum vibrancy and accessibility.
-- **Micro-Animations**: Smooth scale transforms, pulsating "Live" indicators, and refined hover lifts.
-- **Responsive & Adaptive**: Fully optimized for mobile, tablet, and desktop screens with a professional dark mode support.
+- Modular dashboard sections with reusable UI components
+- Responsive layout with a collapsible sidebar
+- Theme support via `next-themes`
+- Charting with Chart.js and React Chart.js 2
+- State management ready with `zustand`
 
-### 📊 Management Modules
-- **Overview**: Real-time followers, reach, and engagement insights.
-- **Analytics**: Deep-dive trends, demographics, and top-performing regions.
-- **Customer Database**: Manage your customer base with detailed interaction logs.
-- **Content Planner**: Schedule and monitor posts across Instagram, Facebook, TikTok, and more.
-- **User Roles**: Collaborative environment with Admin, Editor, and Viewer roles.
+## Tech Stack
 
-## 🛠️ Tech Stack
+- Next.js 15 (App Router)
+- React 19
+- TypeScript
+- Tailwind CSS
+- Radix UI primitives
+- Chart.js + React Chart.js 2
 
-- **Frontend**: [Next.js 15](https://nextjs.org/) (App Router)
-- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
-- **Icons**: [Lucide React](https://lucide.dev/)
-- **Charts**: [Chart.js](https://www.chartjs.org/) & [React-Chartjs-2](https://react-chartjs-2.js.org/)
-- **State Management**: [Zustand](https://github.com/pmndrs/zustand)
-- **Animations**: [tw-animate-css](https://www.npmjs.com/package/tw-animate-css)
-
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
-- Node.js 20+
-- npm or yarn
 
-### Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/social-media-dashboard.git
-   cd social-media-dashboard
-   ```
+- Node.js 18.18+ (or 20+)
+- npm (or pnpm/yarn)
 
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
+### Install
 
-3. Run the development server:
-   ```bash
-   npm run dev
-   ```
+```bash
+npm install
+```
 
-4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Run Development Server
 
-## Develop by Habtamu Befekadu
+```bash
+npm run dev
+```
 
+Open http://localhost:3000 in your browser.
+
+### Production Build
+
+```bash
+npm run build
+npm run start
+```
+
+## Scripts
+
+- `dev` — Start the development server
+- `build` — Create a production build
+- `start` — Run the production server
+- `lint` — Run ESLint
+
+## Project Structure
+
+- [src/app/page.tsx](src/app/page.tsx) — Main dashboard page
+- [src/app/layout.tsx](src/app/layout.tsx) — Root layout
+- [src/app/globals.css](src/app/globals.css) — Global styles
+- [src/components/DashboardHome.tsx](src/components/DashboardHome.tsx) — Dashboard container
+- [src/components/Sidebar.tsx](src/components/Sidebar.tsx) — Sidebar navigation
+- [src/components/ThemeToggler.tsx](src/components/ThemeToggler.tsx) — Theme switcher
+- [src/components/sections](src/components/sections) — Dashboard sections
+- [src/components/ui](src/components/ui) — Reusable UI components
+- [src/hooks](src/hooks) — Custom hooks
+- [src/lib/utils.ts](src/lib/utils.ts) — Utility helpers
+
+## Documentation
+
+- [docs/components.md](docs/components.md)
+- [docs/api.md](docs/api.md)
+- [docs/deployment.md](docs/deployment.md)
+
+## develop by Habtamu Befekadu 
