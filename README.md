@@ -1,71 +1,63 @@
 
 # SocialDash — Social Media Management Dashboard
 
-<div align="center">
+A modern, responsive social media management and analytics dashboard built with Next.js, React, TypeScript, and Tailwind CSS.
 
-![SocialDash Dashboard](public/demo.png)
+SocialDash provides a centralized interface for monitoring social media performance, exploring audience insights, viewing content, and analyzing marketing campaigns.
 
-**A modern, responsive social media management and analytics dashboard built with Next.js, React, TypeScript, and Tailwind CSS.**
+**Project Status:** Frontend demonstration using sample data.
 
-An interactive dashboard for exploring social media performance, content management, audience engagement, marketing campaigns, and customer insights.
+## Project Preview
 
-[View Repository](https://github.com/boldhab/scoial-manager) · [Report a Bug](https://github.com/boldhab/scoial-manager/issues) · [Request a Feature](https://github.com/boldhab/scoial-manager/issues)
+![SocialDash Dashboard Preview](public/demo.png)
 
-![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=next.js)
-![React](https://img.shields.io/badge/React-19-149ECA?logo=react)
-![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?logo=tailwindcss)
-![License](https://img.shields.io/badge/License-Not_Specified-lightgrey)
+## Overview
 
-</div>
+SocialDash is a frontend-focused social media management application designed to simplify the presentation and analysis of social media activities.
 
----
+The project brings together performance analytics, post management interfaces, customer insights, campaign monitoring, and engagement tracking within a unified dashboard.
 
-## 📖 About the Project
+It demonstrates modern frontend development practices, including reusable React components, responsive layouts, interactive data visualizations, and theme customization.
 
-**SocialDash** is a frontend-focused social media management dashboard designed to provide a centralized interface for exploring social media activities and performance metrics.
+## Features
 
-The application brings together analytics, content management, campaign monitoring, audience insights, and customer information in one responsive interface.
+### 1. Dashboard and Overview
 
-Built using modern frontend technologies, SocialDash demonstrates reusable component architecture, interactive data visualization, responsive design, and user-friendly dashboard experiences.
-
-> **Project Status:** Frontend demonstration. Social media statistics, posts, campaigns, and customer records currently use sample data. Backend integration, authentication, persistent storage, and real social media publishing are not yet implemented.
-
----
-
-## ✨ Features
-
-### 📊 Dashboard & Overview
-- Social media performance summary
-- Interactive statistics and metric cards
-- Audience growth and engagement visualizations
-- Platform performance comparisons
-- Responsive analytics layout
+- Social media performance summaries
+- Interactive statistics cards
+- Audience growth visualizations
+- Platform engagement comparisons
+- Performance trend charts
+- Responsive dashboard layouts
 - Interactive overview controls
 
-### 📝 Post Management
+### 2. Post Management
+
 - View social media posts
-- Display scheduled, published, failed, and draft statuses
-- Visualize post engagement metrics
-- View associated social media platforms
-- Display content type, tags, and campaign information
-- Post creation, editing, and deletion interfaces (planned functionality)
+- Display scheduled, published, draft, and failed post statuses
+- View post engagement metrics
+- Display associated social media platforms
+- View content types and campaign associations
+- Post creation, editing, and deletion interface placeholders
 
-### 📈 Analytics & Reporting
-- Follower growth charts
-- Engagement rate visualizations
-- Reach distribution
-- Impressions and conversion metrics
-- Platform performance analysis
-- Chart.js-powered data visualization
+### 3. Analytics and Reporting
 
-### 💬 Engagement Monitoring
+- Follower growth analysis
+- Reach and impression visualizations
+- Engagement rate comparisons
+- Platform performance metrics
+- Conversion statistics
+- Interactive charts using Chart.js
+
+### 4. Engagement Monitoring
+
 - Recent engagement activity
 - Likes, comments, and shares
-- Post-related interaction history
+- Post interaction history
 - Engagement overview cards
 
-### 🎯 Campaign Management
+### 5. Campaign Management
+
 - Marketing campaign overview
 - Campaign status tracking
 - Budget and spending summaries
@@ -73,74 +65,66 @@ Built using modern frontend technologies, SocialDash demonstrates reusable compo
 - Click-through rate (CTR)
 - Cost per click (CPC)
 - Return on ad spend (ROAS)
-- Campaign performance visualizations
+- Campaign performance charts
 
-### 👥 Customer Management
-- Customer profiles and contact information
+### 6. Customer Management
+
+- Customer profile information
 - Customer segmentation
-- Customer spending and order metrics
-- Platform association
 - Customer interaction summaries
-- Customer analytics charts
+- Spending and order metrics
+- Customer engagement insights
+- Customer analytics visualizations
 
-### 🔐 User Management
+### 7. User Management
+
 - User profile listings
 - Admin, editor, and viewer role labels
 - Active, invited, and suspended status indicators
 - User management interface
 
-> User management currently demonstrates role and status data. Authentication and permission enforcement are not implemented.
+Authentication, account invitations, and role-based authorization are not yet implemented.
 
-### ⚙️ Settings & Customization
-- Light and dark theme support
-- System theme integration
+### 8. Settings and Customization
+
+- Light and dark mode
+- System theme support
 - Responsive sidebar navigation
-- Reusable interface components
+- Reusable UI components
+- Appearance customization
 - Account settings placeholder
 
-### 📱 Responsive Design
-- Mobile-friendly layout
-- Collapsible navigation sidebar
-- Responsive dashboard cards
-- Adaptive charts
-- Desktop and tablet support
-- Accessible interface elements
-
----
-
-## 🛠️ Tech Stack
+## Technology Stack
 
 | Category | Technology |
 |----------|------------|
-| Framework | Next.js 15 (App Router) |
+| Framework | Next.js 15 |
 | Frontend | React 19 |
 | Language | TypeScript 5 |
 | Styling | Tailwind CSS 4 |
-| Charts | Chart.js 4, React Chart.js 2 |
+| Charts | Chart.js, React Chart.js 2 |
 | UI Components | Radix UI |
-| Icons | Lucide React |
+| Icons Library | Lucide React |
 | Theme Management | next-themes |
 | UI Utilities | clsx, tailwind-merge |
-| Component Variants | class-variance-authority |
 | Package Manager | npm |
 
-### Additional Installed Libraries
+### Additional Dependencies
 
 The project also includes:
 
 - TanStack React Query
 - Zustand
 - Socket.IO Client
+- class-variance-authority
 
-These dependencies can support future API communication, global state management, and real-time updates. Their installation does not mean those integrations are currently operational.
+These libraries provide a foundation for future API integration, state management, and real-time communication.
 
----
-
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
-Make sure the following tools are installed:
+Before running the application, install:
 
 - Node.js 20 or later
 - npm
@@ -152,7 +136,7 @@ Make sure the following tools are installed:
 git clone https://github.com/boldhab/scoial-manager.git
 ```
 
-### 2. Navigate to the Project Directory
+### 2. Navigate to the Project
 
 ```bash
 cd scoial-manager
@@ -172,196 +156,182 @@ npm run dev
 
 ### 5. Open the Application
 
-Visit:
+Open your browser and navigate to:
 
 ```text
 http://localhost:3000
 ```
 
-The SocialDash dashboard should now be accessible in your browser.
+### Production Build
 
----
+```bash
+npm run build
+npm run start
+```
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 scoial-manager/
-│
-├── public/
-│   ├── demo.png
-│   └── *.svg
-│
-├── docs/
-│   ├── api.md
-│   ├── components.md
-│   └── deployment.md
-│
-├── src/
-│   ├── app/
-│   │   ├── favicon.ico
-│   │   ├── globals.css
-│   │   ├── layout.tsx
-│   │   └── page.tsx
-│   │
-│   ├── components/
-│   │   ├── sections/
-│   │   │   ├── DashboardSection.tsx
-│   │   │   ├── OverviewSection.tsx
-│   │   │   ├── PostsSection.tsx
-│   │   │   ├── AnalyticsSection.tsx
-│   │   │   ├── EngagementSection.tsx
-│   │   │   ├── CampaignsSection.tsx
-│   │   │   ├── CustomersSection.tsx
-│   │   │   ├── UsersSection.tsx
-│   │   │   └── SettingsSection.tsx
-│   │   │
-│   │   ├── ui/
-│   │   │   ├── badge.tsx
-│   │   │   ├── button.tsx
-│   │   │   ├── card.tsx
-│   │   │   ├── dialog.tsx
-│   │   │   ├── loading-spinner.tsx
-│   │   │   ├── progress.tsx
-│   │   │   ├── skeleton.tsx
-│   │   │   ├── toast.tsx
-│   │   │   └── tooltip.tsx
-│   │   │
-│   │   ├── DashboardHome.tsx
-│   │   ├── Sidebar.tsx
-│   │   └── ThemeToggler.tsx
-│   │
-│   ├── hooks/
-│   │   ├── useAccessibility.ts
-│   │   └── useResponsive.ts
-│   │
-│   └── lib/
-│       └── utils.ts
-│
-├── components.json
-├── eslint.config.mjs
-├── next.config.ts
-├── package.json
-├── package-lock.json
-├── postcss.config.mjs
-├── tailwind.config.ts (not present)
-├── tsconfig.json
-└── README.md
+|
+|-- public/
+|   |-- demo.png
+|   |-- *.svg
+|
+|-- docs/
+|   |-- api.md
+|   |-- components.md
+|   |-- deployment.md
+|
+|-- src/
+|   |-- app/
+|   |   |-- favicon.ico
+|   |   |-- globals.css
+|   |   |-- layout.tsx
+|   |   |-- page.tsx
+|   |
+|   |-- components/
+|   |   |-- sections/
+|   |   |   |-- DashboardSection.tsx
+|   |   |   |-- OverviewSection.tsx
+|   |   |   |-- PostsSection.tsx
+|   |   |   |-- AnalyticsSection.tsx
+|   |   |   |-- EngagementSection.tsx
+|   |   |   |-- CampaignsSection.tsx
+|   |   |   |-- CustomersSection.tsx
+|   |   |   |-- UsersSection.tsx
+|   |   |   |-- SettingsSection.tsx
+|   |   |
+|   |   |-- ui/
+|   |   |   |-- badge.tsx
+|   |   |   |-- button.tsx
+|   |   |   |-- card.tsx
+|   |   |   |-- dialog.tsx
+|   |   |   |-- loading-spinner.tsx
+|   |   |   |-- progress.tsx
+|   |   |   |-- skeleton.tsx
+|   |   |   |-- toast.tsx
+|   |   |   |-- tooltip.tsx
+|   |   |
+|   |   |-- DashboardHome.tsx
+|   |   |-- Sidebar.tsx
+|   |   |-- ThemeToggler.tsx
+|   |
+|   |-- hooks/
+|   |   |-- useAccessibility.ts
+|   |   |-- useResponsive.ts
+|   |
+|   |-- lib/
+|       |-- utils.ts
+|
+|-- components.json
+|-- eslint.config.mjs
+|-- next.config.ts
+|-- package.json
+|-- package-lock.json
+|-- postcss.config.mjs
+|-- tsconfig.json
+|-- README.md
 ```
 
-**Note:** Tailwind CSS 4 configuration is managed through the project's CSS and PostCSS configuration; a `tailwind.config.ts` file is not required.
+## Application Architecture
 
----
-
-## 🏗️ Application Architecture
-
-SocialDash follows a component-based frontend architecture using the Next.js App Router.
+The application follows a component-based architecture using Next.js App Router.
 
 ```text
 Next.js Application
-        │
-        ▼
+        |
+        v
     Root Layout
-        │
-        ▼
+        |
+        v
      Main Page
-        │
-        ├── Sidebar Navigation
-        │
-        ├── Theme Toggler
-        │
-        └── Dashboard Home
-                │
-                ├── Dashboard
-                ├── Overview
-                ├── Posts
-                ├── Analytics
-                ├── Engagement
-                ├── Campaigns
-                ├── Customers
-                ├── Users
-                └── Settings
-                        │
-                        ▼
+        |
+        |-- Sidebar Navigation
+        |
+        |-- Theme Toggler
+        |
+        |-- Dashboard Home
+                |
+                |-- Dashboard
+                |-- Overview
+                |-- Posts
+                |-- Analytics
+                |-- Engagement
+                |-- Campaigns
+                |-- Customers
+                |-- Users
+                |-- Settings
+                        |
+                        v
                  Reusable UI
                    Components
 ```
 
-### Architecture Highlights
+### Architecture Principles
 
-- **Component-based design:** Dashboard sections are organized into independent React components.
-- **Reusable UI library:** Buttons, cards, dialogs, badges, and other components share consistent styling.
-- **Responsive design:** Layout behavior adapts to desktop, tablet, and mobile screen sizes.
-- **Client-side navigation:** Dashboard sections are switched through React state.
-- **Data visualization:** Chart.js components display sample analytics data.
-- **Theme management:** `next-themes` manages light and dark appearance.
+**Component Reusability**
 
----
+Shared components are used throughout the application to maintain visual consistency and reduce code duplication.
 
-## 📊 Data and Current Implementation
+**Modular Development**
 
-The application currently uses sample datasets defined inside frontend components.
+Dashboard functionality is organized into separate sections, making the codebase easier to maintain and extend.
+
+**Responsive Design**
+
+The interface adapts to different screen sizes, including desktop, tablet, and mobile devices.
+
+**Client-Side Interaction**
+
+React state manages dashboard navigation and interactive UI behavior.
+
+**Data Visualization**
+
+Chart.js is used to present social media statistics through graphical representations.
+
+## Data Management
+
+The current implementation primarily uses local demonstration datasets.
 
 | Module | Current Data Source |
 |--------|---------------------|
-| Dashboard | Static demonstration metrics |
-| Overview | Local sample data |
-| Posts | In-component sample post records |
+| Dashboard | Static sample metrics |
+| Overview | Local demonstration data |
+| Posts | In-component sample records |
 | Analytics | Static chart datasets |
-| Engagement | Sample engagement activities |
-| Campaigns | In-component sample campaign records |
-| Customers | In-component customer dataset |
+| Engagement | Sample activity records |
+| Campaigns | In-component campaign data |
+| Customers | In-component customer data |
 | Users | Sample user records |
-| Settings | Client-side theme preference |
+| Settings | Client-side theme settings |
 
 ### Current Limitations
 
-- No production backend API
+- No production backend
 - No persistent database
-- No user authentication
-- No enforced role-based access control
-- No real social media account integration
-- No automatic social media publishing
+- No implemented user authentication
+- No enforced role-based authorization
+- No real social media API integration
+- No automatic post publishing
 - No server-side post scheduling
 - No live social media analytics
 - Some action buttons are placeholders
 
-The project provides a foundation for implementing these capabilities in future releases.
+These capabilities are planned for future development.
 
----
-
-## 📜 Available Scripts
+## Available Scripts
 
 | Command | Description |
 |---------|-------------|
 | `npm run dev` | Start the development server |
-| `npm run build` | Generate a production build |
-| `npm run start` | Start the production server |
-| `npm run lint` | Currently configured with deprecated `next lint` |
+| `npm run build` | Build the application for production |
+| `npm run start` | Run the production server |
+| `npm run lint` | Run the configured lint command |
 
-### Recommended Linting Fix
+**Note:** The current `lint` script uses `next lint`. For Next.js 15 and ESLint 9 compatibility, update the script in `package.json` to use `eslint .`.
 
-For compatibility with Next.js 15 and ESLint 9, update the lint script in `package.json`:
-
-```json
-{
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint ."
-  }
-}
-```
-
-Then run:
-
-```bash
-npm run lint
-```
-
----
-
-## 📚 Documentation
+## Documentation
 
 Additional project documentation is available:
 
@@ -369,62 +339,54 @@ Additional project documentation is available:
 - [Component Documentation](docs/components.md)
 - [Deployment Guide](docs/deployment.md)
 
-**Note:** The API documentation describes an intended integration interface. It does not represent a deployed or fully implemented backend API.
+The API reference describes a proposed backend integration contract rather than an implemented API.
 
----
+## Future Improvements
 
-## 🗺️ Future Roadmap
+### Backend Development
 
-### Phase 1 — Frontend Dashboard
-- [x] Create dashboard layout
-- [x] Implement sidebar navigation
-- [x] Build reusable UI components
-- [x] Add interactive analytics charts
-- [x] Implement responsive design
-- [x] Add light and dark themes
+- Implement REST APIs
+- Integrate a database
+- Add authentication and authorization
+- Implement CRUD operations
+- Add secure session management
 
-### Phase 2 — Backend Integration
-- [ ] Build backend REST APIs
-- [ ] Integrate a persistent database
-- [ ] Implement authentication
-- [ ] Add secure role-based access control
-- [ ] Implement functional CRUD operations
+### Social Media Integration
 
-### Phase 3 — Social Media Integration
-- [ ] Integrate social media platform APIs
-- [ ] Connect authorized social media accounts
-- [ ] Implement post scheduling
-- [ ] Enable content publishing
-- [ ] Retrieve real engagement statistics
+- Connect social media accounts
+- Integrate supported platform APIs
+- Implement content scheduling
+- Enable post publishing
+- Retrieve real engagement statistics
 
-### Phase 4 — Advanced Analytics
-- [ ] Add dynamic reporting
-- [ ] Implement date-range filtering
-- [ ] Support analytics exports
-- [ ] Introduce real-time updates
-- [ ] Add custom performance dashboards
+### Advanced Analytics
 
-### Phase 5 — Production Readiness
-- [ ] Add automated tests
-- [ ] Implement CI/CD pipelines
-- [ ] Improve accessibility
-- [ ] Add monitoring and error tracking
-- [ ] Perform security testing
-- [ ] Deploy production services
+- Dynamic reporting
+- Date-range filtering
+- Custom dashboards
+- Data export functionality
+- Real-time metric updates
 
----
+### Production Readiness
 
-## 🤝 Contributing
+- Automated testing
+- CI/CD integration
+- Performance optimization
+- Accessibility improvements
+- Security testing
+- Production deployment
+
+## Contributing
 
 Contributions and suggestions are welcome.
 
 To contribute:
 
-1. Fork this repository.
-2. Create a feature branch.
-3. Implement your improvements.
+1. Fork the repository.
+2. Create a new feature branch.
+3. Implement your changes.
 4. Commit your changes.
-5. Push the branch to your fork.
+5. Push your branch.
 6. Open a pull request.
 
 Example:
@@ -432,39 +394,32 @@ Example:
 ```bash
 git checkout -b feature/new-feature
 git add .
-git commit -m "feat: add new feature"
+git commit -m "feat: implement new feature"
 git push origin feature/new-feature
 ```
 
-Please keep contributions aligned with the existing project structure and coding conventions.
-
----
-
-## 👨‍💻 Developer
+## Developer
 
 **Habtamu Befekadu**
 
-Software Engineering Student | Full-Stack Web & Mobile Developer
+Software Engineering Student | Full-Stack Web and Mobile Developer
 
-Passionate about building scalable web applications, intuitive interfaces, and practical software solutions.
+Interested in developing modern web applications, mobile applications, and scalable software systems.
 
-- **GitHub:** [@boldhab](https://github.com/boldhab)
+**GitHub:** [github.com/boldhab](https://github.com/boldhab)
 
+
+
+
+
+## Support
+
+If you find this project useful, consider starring the repository.
+
+Feedback, suggestions, and contributions are appreciated.
 
 ---
 
-## ⭐ Support
+**Developed by Habtamu Befekadu**
 
-If you find this project useful, consider giving the repository a star.
-
-Your feedback, suggestions, and contributions are appreciated.
-
----
-
-<div align="center">
-
-**Built with Next.js, React, TypeScript, and Tailwind CSS.**
-
-Developed by **[Habtamu Befekadu](https://github.com/boldhab)**
-
-</div>
+Built with Next.js, React, TypeScript, and Tailwind CSS.
